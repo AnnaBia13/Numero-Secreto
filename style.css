@@ -110,10 +110,29 @@ button:disabled {
     background-color: gray;
 }
 
-@media screen and (max-width: 1250px) {
-
+/* Estilos padrão para telas grandes (PC e notebooks maiores) */
+@media screen and (max-width: 1440px) {
     h1 {
-        font-size: 50px;
+        font-size: 48px;
+    }
+
+    .container__botao {
+        font-size: 18px;
+    }
+
+    .texto__paragrafo {
+        font-size: 22px;
+    }
+
+    .container__imagem-pessoa {
+        width: 400px;
+    }
+}
+
+/* Notebooks médios e menores */
+@media screen and (max-width: 1250px) {
+    h1 {
+        font-size: 45px;
     }
 
     .container__botao {
@@ -121,7 +140,7 @@ button:disabled {
     }
 
     .texto__paragrafo {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .container__imagem-pessoa {
@@ -134,6 +153,68 @@ button:disabled {
     }
 
     .container__informacoes {
-        padding: 1rem
+        padding: 1rem;
+    }
+}
+
+/* Tablets (modo paisagem e retrato) */
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .container__botao {
+        font-size: 14px;
+    }
+
+    .texto__paragrafo {
+        font-size: 18px;
+    }
+
+    .container__informacoes {
+        padding: 0.8rem;
+    }
+}
+
+/* Celulares grandes (phablets e smartphones maiores) */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .container__botao {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .texto__paragrafo {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .container__informacoes {
+        padding: 0.5rem;
+    }
+}
+
+/* Celulares pequenos */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .container__botao {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .texto__paragrafo {
+        font-size: 14px;
+    }
+
+    .container__informacoes {
+        padding: 0.5rem;
     }
 }
