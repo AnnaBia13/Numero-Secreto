@@ -130,6 +130,25 @@ button:disabled {
 }
 
 /* Notebooks médios e menores */
+@media screen and (max-width: 1440px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    .container__botao {
+        font-size: 18px;
+    }
+
+    .texto__paragrafo {
+        font-size: 22px;
+    }
+
+    .container__imagem-pessoa {
+        width: 400px;
+    }
+}
+
+/* Notebooks médios e menores */
 @media screen and (max-width: 1250px) {
     h1 {
         font-size: 45px;
